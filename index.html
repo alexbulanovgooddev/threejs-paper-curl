@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Threejs Paper Curl</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.26/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-image-container">
+        <img class="hero-image" src="./images/image-01.jpg" alt="Hero image" />
+      </div>
+
+      <div class="hero-text">
+        <h1>
+          Самое ценное не всегда лежит на поверхности. Иногда нужно просто
+          подойти ближе.
+        </h1>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script src="shaders.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
